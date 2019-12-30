@@ -1,0 +1,270 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100%;
+        height: 1500px;
+        position: relative;
+        background: rgba(166, 218, 200, 0.76);
+    }
+    
+    #head {
+        width: 74%;
+        height: 12%;
+        position: relative;
+        left: 13%;
+        padding-top: 2%;
+        color: rgb(69, 92, 23);
+    }
+
+    .loc {
+        font-size: 1.2em;
+        position: relative;
+        
+    }
+
+   
+    #wrap {
+        width: 76%;
+        height: 78%;
+        margin: 0 auto;
+        position: absolute;
+        top: 12%;
+        left: 12%;
+    }
+    
+    #left,
+    #right {
+        position: absolute;
+        background: rgba(255, 250, 250, 0.733);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    #left {
+        width: 73%;
+        height: 100%;
+        left: 2%;
+    }
+    
+    .flex-container {
+        width: 95%;
+        height: 35%;
+        position: absolute;
+        left: 2.5%;
+        top: 6%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .flex-items {
+        width: 29%;
+        height: 80%;
+        border: 1px solid rgba(61, 58, 58, 0.438);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .flex-items img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* img:hover {
+        transform: scale(1.2);
+    }
+     */
+    .flex-items:hover {
+        transition: linear 0.2s;
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px rgb(185, 176, 176);
+    }
+    
+    #left .text {
+        width: 84%;
+        height: 13%;
+        /* border: 1px dotted rgb(65, 129, 76); */
+        background: rgba(211, 202, 202, 0.575);
+        position: relative;
+        left: 8%;
+        top: 29%;
+        margin-bottom: 4%;
+        }
+    
+    #right {
+        width: 22%;
+        height: 100%;
+        right: 2%;
+        /* border: 1px solid black; */
+    }
+
+    #right .card {
+        width: 80%;
+        height: 20%;
+        margin: 5% auto;
+        text-align: center;
+        border: 1px solid rgb(170, 165, 165);
+        border-radius: 5px;
+        box-shadow: 0 5px 5px#ccc;
+        /* background: rgba(103, 158, 137, 0.445); */
+
+    }
+    
+    .card1 {
+        width: 40%;
+        height: 30%;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.925);
+        border-radius: 50%;
+        margin: 15px auto;
+        
+    }
+
+    .card2 {
+        width: 80%;
+        height: 60%;
+        position: relative;
+        top: -5%;
+        left: 10%;
+        /* background: rgba(0, 0, 0, 0.863); */
+        border-radius: 5px;
+    }
+
+    .card2 p {
+        color: rgb(35, 88, 55);
+        font-size: 1.2em;
+        text-align: left;
+        padding: 10px 5px;
+    }
+        
+    #right .panel{
+        width: 100%;
+        /* height: %; */
+    }
+
+    #bg{
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #bg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #foot {
+        width: 50%;
+        text-align: center;
+        position: absolute;
+        bottom: 4%;
+        left: 25%;
+
+    }
+    
+    #foot a {
+        margin-right: 10%;
+    }
+    
+    .t3 {
+        width: 100%;
+        border-top: 1px solid rgb(94, 128, 23);
+    }
+
+    .text2 {
+        width: 30%;
+        height: 95%;
+        position: relative;
+        top: 2.5%;
+        border-radius: 5%;
+        border: 5px double #ccc;
+        overflow: hidden;
+
+    }
+    
+    .text1 {
+        width: 65%;
+        height: 95%;
+        overflow: hidden;
+        position: absolute;
+        top: 2%;
+        right: 0;
+    }
+
+    .text2 img {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .text2 img:hover {
+        transform: scale(1.2);
+    }
+
+    .t1, .t2{
+        width: 60%;
+        font-size: large;
+        color: olivedrab;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .t2{
+        width: 30%;
+        position: relative;
+        top: 29%;
+    }
+
+    .t1 hr, .t2 hr {
+        border-top: 1px solid olivedrab;
+    }
+
+    .btn{
+        width: 80%;
+        position: absolute;
+        bottom: 1.5%;
+        left: 0;
+    }
+
+    .btn a{
+        width: 20%;
+        box-shadow: 0 0 2px black;
+
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0 20%;
+    }
+
+    .more {
+        box-shadow: 0 0 2px black;
+        border-radius: 15px;
+        padding: 4px 10px;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+
+    #wrap a {
+        background: snow;
+    }
+
+    #right input {
+        position: relative;
+        top: 2%;
+        left: 3%;
+    }
+
+    #tou {
+        width: 40%;
+        height: 60%;
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }

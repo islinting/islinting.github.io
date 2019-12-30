@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于博客搭建</title>
+    <link rel="stylesheet" href="/public/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/text.css">
+    <script src="/public/lib/jquery-1.11.3.js"></script>
+    <script src="/public/lib/bootstrap.min.js"></script>
+    <script src="/public/js/text.js"></script>
+</head>
+<body>
+
+    <div id="head">
+        <a class="bk" href="http://127.0.0.1:4000">返回首页</a>
+        <span class="loc">所在位置：首页 > 关于博客搭建 </span>
+        <div class="page-header">
+            <h1>关于博客搭建</h1>
+        </div>
+        <div class="dev">
+            <span>作者：林某人</span>
+            <span>发表时间：2019-12-26 12:00:34</span>
+            <span>分类：<span class="label label-success">study</span></span>
+        </div>
+    </div>
+
+    <div id="wrap">
+
+        <div id="left">
+        
+            <div class="text">
+                    <p>这次个人博客应该可以说是我最为耗神的一次项目了，可能也是和我本身的慢性子相关，这次的博客搭建对我来说是比较赶的，一方面是时间紧迫，另一方面是实践较少，有许多知识还比较生疏。jekyll和markdown是这次弄博客才知道的，因为不熟悉也出了许多小差错，也在这不断纠错的过程中有了一些存储。</p>
+
+<p>下图是一些markdown语法，因为在md文件里直接编写内容是会报错的，就截个图再大概说说自己在这个过程中遇到的一些问题好了。</p>
+
+<p><img src="/public/img/std1.png" /></p>
+
+<p>1.文章摘要过多</p>
+
+<p>一开始摘要是在头信息中用excerpt来进行自定义的，然后因为字数过多，不仅超出了指定范围，还盖住了a链接，使其无法正常跳转到文章页面，然后就改成了图中的第2条语法，指定输出前规定字符数，根据页面进行再三调整，最后改成了输出前80字符。</p>
+
+<p>2.图片显示</p>
+
+<p>因为首页下面的文章是遍历输出的，图片一开始都是一样的，之后是在post的头信息设置了images，然后在输出设定的images。</p>
+
+<p>3.时间显示有误</p>
+
+<p>最开始设置时间时，没有加‘0800’，导致有些时间输出时就不是我所设置的时间；其次，在输出时间时忘记指定格式了，连带着‘0800’一起显示了一段时间才发现是这个问题。</p>
+
+<p>4.文章格式错误</p>
+
+<p>在设置文章内容的命名格式时，因为设置了当前还没到的日期，导致文章遍历不出，之后改了文件名就可以了。</p>
+
+
+                
+            </div>
+
+    </div>
+
+        <div id="right">
+
+            <input type="date" value="2019-12-28">
+            <img src="/public/img/bg4.gif" alt=""> 
+            <div class="panel panel-info">
+               
+                <div class="panel-heading">分类列表</div>
+                
+                <ul class="list-group">
+                    
+                        <li class="list-group-item">
+                            <h5>life&ensp;&ensp;<small>(3)</small></h5>
+                        </li>
+                       
+                        
+                        <li class="list-group-item">
+                            <h5>others&ensp;&ensp;<small>(2)</small></h5>
+                        </li>
+                       
+                        
+                        <li class="list-group-item">
+                            <h5>study&ensp;&ensp;<small>(1)</small></h5>
+                        </li>
+                       
+                        
+                </ul>
+
+            </div>
+            
+            <div class="panel panel-info">
+               
+                <div class="panel-heading">最近更新</div>
+            
+                <ul class="list-group">
+                
+
+                    <li class="list-group-item">
+                        <a href="/others/2019/12/26/text3.html">散文节选——对待生命的层次</a> 
+                        <br><small>2019-12-26 18:00:34</small>
+                    </li>
+                
+
+                    <li class="list-group-item">
+                        <a href="/life/2019/12/26/text6.html">假期计划——玩乐篇</a> 
+                        <br><small>2019-12-26 12:30:21</small>
+                    </li>
+                
+
+                    <li class="list-group-item">
+                        <a href="/study/2019/12/26/text5.html">关于博客搭建</a> 
+                        <br><small>2019-12-26 12:00:34</small>
+                    </li>
+                
+
+                    <li class="list-group-item">
+                        <a href="/life/2019/12/26/text4.html">假期计划——学习篇</a> 
+                        <br><small>2019-12-26 09:00:34</small>
+                    </li>
+                
+
+                    <li class="list-group-item">
+                        <a href="/others/2019/12/25/text2.html">散文节选——生活与生存</a> 
+                        <br><small>2019-12-25 12:00:34</small>
+                    </li>
+                
+                </ul>
+                
+            </div>
+
+            <div class="panel panel-default">
+            
+                <ul class="list-group">
+
+                    <li class="list-group-item">
+                        
+                        <a href="/life/2019/12/26/text4.html">上一篇：<small>假期计划——学习篇</small></a> 
+                        
+                        <br>
+                        <br>
+                        
+                        <a href="/life/2019/12/26/text6.html">下一篇：<small>假期计划——玩乐篇</small></a> 
+                        
+                    </div>
+                    </li>
+               
+                </ul>
+                
+            </div>
+
+
+            <div class="btn">
+               
+            
+        </div>
+    </div>
+
+    <div id="foot">
+        <a href="#">关于</a>
+        <a href="#">联系</a>
+        <a href="#">更多</a>
+        <hr>
+    </div>
+
+</body>
+</html>
